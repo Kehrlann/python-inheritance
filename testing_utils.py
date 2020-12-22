@@ -1,8 +1,11 @@
 import threading
 from time import sleep
+import sys
 
 
 class FakeCli():
+    SKIP = object()
+
     def __init__(self):
         self.displayed_messages = []
         self.current_message = None
@@ -13,22 +16,35 @@ class FakeCli():
     def prompt(self, message):
         self.displayed_messages.append(message)
         for _ in range(10):
-            if self.current_message:
+            if self.current_message is FakeCli.SKIP:
+                self.current_message = None
+                return
+            elif self.current_message:
                 typed = self.current_message
-                del self.current_message
+                self.current_message = None
                 return typed
-            sleep(.1)
+            sleep(.01)
         raise Exception("No input in the last 100ms")
 
     def type(self, message):
-        self.current_message = message
+        for _ in range(10):
+            if not self.current_message:
+                break
+            sleep(.01)
+        else:
+            raise Exception(
+                f"The input \"{self.current_message}\" wasn't consumed in the last 100ms"
+            )
+
+        self.current_message = message if message else FakeCli.SKIP
 
     def get_displayed(self):
+        sleep(.05)
         for _ in range(10):
             if self.displayed_messages:
                 messages = self.displayed_messages
                 self.displayed_messages = []
-                return messages
+                return [m.strip() for m in messages]
             sleep(.1)
         return []
 
@@ -36,7 +52,15 @@ class FakeCli():
 def make_auction(auction_cls):
     cli = FakeCli()
     auction = auction_cls(cli)
-    t = threading.Thread(target=auction.play, daemon=True)
+
+    def wrapped_play():
+        try:
+            auction.play()
+        except Exception as e:
+            sys.stderr.write(str(e))
+            sys.stderr.flush()
+
+    t = threading.Thread(target=wrapped_play, daemon=True)
     t.start()
     return cli
 
