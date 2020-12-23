@@ -48,31 +48,31 @@ Je vous déconseille fortement de les modifier 🙃
 1. Ouvrez tout le dossier dans VSCode
 2. Dans le menu View, ouvrez la Command Palette (Ctrl + Shift + P / Cmd + Shift + P)
 
-![https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/one.png]
+![one](https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/one.png)
 
 3. Tapez "python test" et sélectionnez "Python: Run all tests"
 
-![https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/two.png]
+![two](https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/two.png)
 
 4. Cliquez sur la pop-up en bas à droite
 
-![https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/three.png]
+![three](https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/three.png)
 
 5. Dans le menu, sélectionnez `unittest` (c'est l'outil qu'on utilise pour cet exercice)
 
-![https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/four.png]
+![four](https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/four.png)
 
 6. Puis sélectionnez `. Root directory`
 
-![https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/five.png]
+![five](https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/five.png)
 
 7. Puis `test_*.py` (c'est comme ca que s'appellent nos fichiers de test):
 
-![https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/six.png]
+![six](https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/six.png)
 
 8. Ca vous donnera accès à un nouvel onglet (1). Dans cet onglet faites le 2 pour "découvrir" les fichiers de test, "3" pour les exécuter et "4" pour ouvrir une console. Vous pouvez aussi exécuter les tests un par un:
 
-![https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/seven.png]
+![seven](https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/seven.png)
 
 ### 1. Blind auction: les règles
 
