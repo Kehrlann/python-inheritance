@@ -74,6 +74,10 @@ Je vous déconseille fortement de les modifier 🙃
 
 ![seven](https://raw.githubusercontent.com/Kehrlann/python-inheritance/master/images/seven.png)
 
+---
+
+Passons au TP, enfin !
+
 ### 1. Blind auction: les règles
 
 Voici les règles de enchères à l'aveugle, ou [Blind auction](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction):
