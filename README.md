@@ -154,4 +154,16 @@ Exemple:
 # Winner is alice. Winning bid is 45.
 ```
 
-🚀 Implémentez l'English auction dans `english.py`. Vous avez le droit de tout copier-coller depuis `blind.py` pour commencer !
+🚀 Implémentez l'English auction dans `english.py`. Vous avez le droit de tout copier-coller depuis `blind.py` pour commencer! Vous devez exécuter les tests jusqu'à ce que `test_english.py` fonctionne à 100%.
+
+### 4. Mise en commun: le facile
+
+Remarquez maintenant les similitudes entre `blind` et `english`.
+
+🚀 Introduisez une classe de base, par exemple `Auction` dans le fichier `auction.py`, et mutualisez les étapes en commun dans `blind` et `english`, par exemple en introduisant des fonctions spécifiques.
+
+N'oubliez pas d'exécuter les tests de `blind` et `english` pour être sûrs que vous n'avez rien cassé!
+
+### 4. Mise en commun: un peu plus intéressant
+
+Pass
