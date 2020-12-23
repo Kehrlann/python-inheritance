@@ -164,6 +164,49 @@ Remarquez maintenant les similitudes entre `blind` et `english`.
 
 N'oubliez pas d'exécuter les tests de `blind` et `english` pour être sûrs que vous n'avez rien cassé!
 
-### 4. Mise en commun: un peu plus intéressant
+### 5. Mise en commun: un peu plus intéressant
 
-Pass
+🚀 Essayez de ne définir la méthode "play" que dans la classe de base, `auction`. Comment s'y prendre ?
+
+### 6. Vickrey auction
+
+Il devrait être facile d'implémenter une nouvelle enchère!
+
+Voici les règles des enchères en plis cachetés à un tour au second prix, ou [Enchère de Vickrey](https://en.wikipedia.org/wiki/Vickrey_auction):
+
+- Les enchères démarrent avec un prix minimum
+- Les enchérisseurs doivent sur-enchérir par rapport au prix minimum
+- Les enchérisseur ne savent pas quel est la plus haute enchère (on estime qu'ils ne peuvent pas lire ce que les autres on saisi dans le terminal)
+- Il n'y a qu'un seul tour
+- Le gagnant est celui qui a proposé le prix le plus haut
+- Le prix final est la _deuxième enchère la plus haute_
+
+Exemple:
+
+```diff
+# Started auction of type: Blind
+# Please enter the opening bid:
+! 30
+# Opening bid is: 30
+# Enter bidder (enter nothing to move on):
+! alice
+# Enter bidder (enter nothing to move on):
+! bob
+# Enter bidder (enter nothing to move on):
+! carol
+# Enter bidder (enter nothing to move on):
+!
+# Bidders are: alice, bob, carol
+#
+# Opening bid is 30. alice bids:
+! 35
+# Opening bid is 30. bob bids:
+! 50
+# Opening bid is 30. carol bids:
+! 40
+# ~~~~~~~~
+#
+# Winner is bob. Winning bid is 40.
+```
+
+A vous de jouer, comme d'habitude vous avez un fichier de test `test_vickrey.py`.
