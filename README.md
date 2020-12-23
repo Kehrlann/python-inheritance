@@ -34,7 +34,7 @@ Je vous déconseille fortement de les modifier 🙃
   - Par exemple, quand on leur demande d'enchérir, ils tapent "10" ou "115", mais ils ne tapent pas "toto 1234 %&@# 💣💩🤮"
   - Par exemple, quand on leur demande de sur-enchérir sur une enchère de 30, ils tapent "45" ou une chaîne vide pour passer leur tour, mais pas "12"
   - Le but n'est pas de tester toutes les possibilités !
-- Exemples sont écrits avec en gris le texte affiché par le programme, et en orange pour le texte saisi par l'utilisateur (sur Github, ca peut varier selon les éditeurs de code):
+- Exemples sont écrits avec en gris le texte affiché par le programme, et en orange pour le texte saisi par l'utilisateur (sur Github, ca peut varier selon les éditeurs de code). Ignorez les `#` et les `!`, qui ne sont là que pour le formattage:
 
 ```diff
 # Le programme affiche ceci.
@@ -84,11 +84,11 @@ Exemple:
 
 ### 2. Blind auction: le code
 
-Regardez le fichier `blind.py`, tout a déjà été implémenté pour vous. Lisez le code, exécutez le fichier, faite une partie d'enchères.
+🚀 Regardez le fichier `blind.py`, tout a déjà été implémenté pour vous. Lisez le code, exécutez le fichier, faite une partie d'enchères.
 
 Vous pouvez également regarder `test_blind.py` pour avoir une idée de comment les tests sont écrits, si vous êtes curieux.
 
-Exécutez `test_blind.py`, de préférence avec VS Code. Si vous exécutez dans le terminal, vous devriez avoir ce genre de résultat:
+🚀 Exécutez `test_blind.py`, de préférence avec VS Code. Si vous exécutez dans le terminal, vous devriez avoir ce genre de résultat:
 
 ```
 $ python test_auctions.py
@@ -153,3 +153,5 @@ Exemple:
 #
 # Winner is alice. Winning bid is 45.
 ```
+
+🚀 Implémentez l'English auction dans `english.py`. Vous avez le droit de tout copier-coller depuis `blind.py` pour commencer !
