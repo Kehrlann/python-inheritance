@@ -184,7 +184,7 @@ Voici les règles des enchères en plis cachetés à un tour au second prix, ou 
 Exemple:
 
 ```diff
-# Started auction of type: Blind
+# Started auction of type: Vickrey
 # Please enter the opening bid:
 ! 30
 # Opening bid is: 30
@@ -209,4 +209,8 @@ Exemple:
 # Winner is bob. Winning bid is 40.
 ```
 
-A vous de jouer, comme d'habitude vous avez un fichier de test `test_vickrey.py`.
+🚀 A vous de jouer, comme d'habitude vous avez un fichier de test `test_vickrey.py`. Le cas ci-dessus est intéressant pour votre implémentation.
+
+### 7. Jeu libre
+
+Si vous avez encore le temps, n'hésitez pas à modifier votre programme pour mettre une méthode qui représente "un tour" d'enchères dans la classe de base, et voir comment modifier vos classes filles pour l'utiliser. Pas de test particulier pour ça, mais, comme d'habitude, il ne faut rien casser !
