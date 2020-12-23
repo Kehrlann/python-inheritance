@@ -7,12 +7,13 @@ class BlindAuction():
         self.cli = cli if cli else Cli()
 
     def play(self):
+        # Input opening bid
         self.cli.display('Started auction of type: Blind')
         opening_bid = self.cli.prompt('Please enter the opening bid:')
         opening_bid = int(opening_bid)
-
         self.cli.display(f"Opening bid is: {opening_bid}")
 
+        # Input bidders
         bidders = []
         while True:
             bidder = self.cli.prompt(
@@ -22,6 +23,8 @@ class BlindAuction():
                 break
             bidders.append(bidder)
         self.cli.display(f"\nBidders are: {', '.join(bidders)}")
+
+        # Collect bids
         standing_bid = opening_bid
         winner = None
         for bidder in bidders:
@@ -33,6 +36,7 @@ class BlindAuction():
                 standing_bid = bid
                 winner = bidder
 
+        # Display winner
         self.cli.display("\n~~~~~~~~\n")
         self.cli.display(f"Winner is {winner}. Winning bid is {standing_bid}.")
 

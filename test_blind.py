@@ -1,27 +1,7 @@
 import unittest
 
-from auction import BlindAuction
+from blind import BlindAuction
 from testing_utils import make_auction
-
-
-class TestAuction():
-
-    def __init__(self, cli=None):
-        self.cli = cli
-
-    def play(self):
-        val = self.cli.prompt("give me your name")
-        self.cli.display(val)
-
-
-class TestEcho(unittest.TestCase):
-
-    def test_echo(self):
-        cli = make_auction(TestAuction)
-        self.assertEqual(['give me your name'], cli.get_displayed())
-        cli.type("hello")
-        self.assertEqual(['hello'], cli.get_displayed())
-        self.assertEqual([], cli.get_displayed())
 
 
 class TestBlind(unittest.TestCase):
@@ -67,12 +47,9 @@ class TestBlind(unittest.TestCase):
         cli.type('bob')
         cli.type('carol')
         cli.type(None)
-        self.assertEqual(
-            [
-                'Bidders are: alice, bob, carol',
-                'Opening bid is 30. alice bids:'
-            ],
-            cli.get_displayed()[-2:]
+        self.assertIn(
+            'Opening bid is 30. alice bids:',
+            cli.get_displayed()
         )
         cli.type(35)  # TODO: assert & bid
         self.assertEqual(

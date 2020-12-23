@@ -1,3 +1,4 @@
+# NE PAS MODIFIER
 import threading
 from time import sleep
 import sys
@@ -39,7 +40,7 @@ class FakeCli():
         self.current_message = message if message else FakeCli.SKIP
 
     def get_displayed(self):
-        sleep(.05)
+        sleep(.02)
         for _ in range(10):
             if self.displayed_messages:
                 messages = self.displayed_messages
@@ -57,8 +58,9 @@ def make_auction(auction_cls):
         try:
             auction.play()
         except Exception as e:
-            sys.stderr.write(str(e))
-            sys.stderr.flush()
+            pass
+            # sys.stderr.write(str(e))
+            # sys.stderr.flush()
 
     t = threading.Thread(target=wrapped_play, daemon=True)
     t.start()
