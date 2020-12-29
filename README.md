@@ -28,13 +28,13 @@ Je vous déconseille fortement de les modifier 🙃
 - Pour intéragir avec la ligne de commande, vous devez **impérativement** utiliser l'utilitaire `self.cli` qui est dans les enchères.
   - Vous pouvez faire l'équivalent de `print()` en faisant `self.cli.display()`
   - Vous pouvez demander à l'utilisateur de saisir des choses sur la ligne de commande, l'équivalent de `value = input("Entrez une valeur")`, en faisant `value = self.cli.prompt("Entrez une valeur")`
-  - L'usage direct de `print()` et `input()` est proscrit, sinon les tests ne marcherons pas
+  - L'usage direct de `print()` et `input()` est proscrit, sinon les tests ne marcheront pas
   - Cette classe nous sert à simuler `print` et `input` dans les tests automatisés
 - Pour ce TP, vous pouvez estimer que les utilisateurs du programme ne font que des choses "légales"
   - Par exemple, quand on leur demande d'enchérir, ils tapent "10" ou "115", mais ils ne tapent pas "toto 1234 %&@# 💣💩🤮"
   - Par exemple, quand on leur demande de sur-enchérir sur une enchère de 30, ils tapent "45" ou une chaîne vide pour passer leur tour, mais pas "12"
   - Le but n'est pas de tester toutes les possibilités !
-- Exemples sont écrits avec en gris le texte affiché par le programme, et en orange pour le texte saisi par l'utilisateur (sur Github, ca peut varier selon les éditeurs de code). Ignorez les `#` et les `!`, qui ne sont là que pour le formattage:
+- Les exemples sont écrits avec en gris le texte affiché par le programme, et en orange pour le texte saisi par l'utilisateur (sur Github, ca peut varier selon les éditeurs de code). Ignorez les `#` et les `!`, qui ne sont là que pour le formattage:
 
 ```diff
 # Le programme affiche ceci.
@@ -80,11 +80,11 @@ Passons au TP, enfin !
 
 ### 1. Blind auction: les règles
 
-Voici les règles de enchères à l'aveugle, ou [Blind auction](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction):
+Voici les règles des enchères à l'aveugle, ou [Blind auction](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction):
 
 - Les enchères démarrent avec un prix minimum
 - Les enchérisseurs doivent sur-enchérir par rapport au prix minimum
-- Les enchérisseur ne savent pas quel est la plus haute enchère (on estime qu'ils ne peuvent pas lire ce que les autres on saisi dans le terminal)
+- Les enchérisseurs ne savent pas quel est la plus haute enchère (on estime qu'ils ne peuvent pas lire ce que les autres on saisi dans le terminal)
 - Il n'y a qu'un seul tour
 - Le gagnant est celui qui a proposé le prix le plus haut
 - Le prix final est le prix le plus haut proposé
@@ -119,7 +119,7 @@ Exemple:
 
 ### 2. Blind auction: le code
 
-🚀 Regardez le fichier `blind.py`, tout a déjà été implémenté pour vous. Lisez le code, exécutez le fichier, faite une partie d'enchères.
+🚀 Regardez le fichier `blind.py`, tout a déjà été implémenté pour vous. Lisez le code, exécutez le fichier, faites une partie d'enchères.
 
 Vous pouvez également regarder `test_blind.py` pour avoir une idée de comment les tests sont écrits, si vous êtes curieux.
 
@@ -135,7 +135,7 @@ Ran 3 tests in 0.303s
 OK
 ```
 
-Les 3 points indiquent 3 tests qui fonctionnent, et le "OK" indique que tous les tests passent. C'est important, parce que vous allez, plus tard le TP, modifier `blind.py`.
+Les 3 points indiquent 3 tests qui fonctionnent, et le "OK" indique que tous les tests passent. C'est important, parce que vous allez, plus tard dans le TP, modifier `blind.py`.
 
 ### 3. English auction: les règles
 
