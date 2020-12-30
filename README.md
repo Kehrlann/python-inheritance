@@ -45,6 +45,12 @@ Je vous déconseille fortement de les modifier 🙃
 
 ### Comment exécuter les tests dans VSCode
 
+Une vidéo pour vous montrer comment exécuter les tests:
+
+[![lien youtube vers la video tutorial](https://img.youtube.com/vi/BkzD0Qcu4-I/0.jpg)](https://www.youtube.com/watch?v=BkzD0Qcu4-I)
+
+Si ça fonctionne chez vous, vous pouvez sauter toute la partie avec les screenshots, qui ne fait que récapituler le contenu de la vidéo.
+
 1. Ouvrez tout le dossier dans VSCode
 2. Dans le menu View, ouvrez la Command Palette (Ctrl + Shift + P / Cmd + Shift + P)
 
