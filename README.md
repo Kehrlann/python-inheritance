@@ -4,20 +4,20 @@ OOP and inheritance ... in Python!
 
 ## Instructions
 
-Votre but est d'implémenter des ventes aux enchères. Une vente aux enchères à l'aveule a déjà été implémentée pour vous dans le fichier `blind.py`.
-Vous pouvez exécuter chacun des fichiers directement, pour "jouer" aux enchères:
+Votre but est d'implémenter des ventes aux enchères. Une vente aux enchères à l'aveugle a déjà été implémentée pour vous dans le fichier `blind.py`.
+Vous pouvez exécuter chacun des fichiers directement, pour "jouer" aux enchères :
 
 ```
 $ python blind.py
 ```
 
-Des tests pour ces enchères on été implementés dans `test_blind.py`. Vous pouvez les exécuter avec VSCode, ou bien directement dans le terminal:
+Des tests pour ces enchères ont été implementés dans `test_blind.py`. Vous pouvez les exécuter avec VSCode, ou bien directement dans le terminal :
 
 ```
 $ python test_blind.py
 ```
 
-Votre but va être d'implémenter d'autres types d'enchères. Pour chaque type d'enchères, un fichier de test vous est fourni.
+Votre but va être d'implémenter d'autres types d'enchères. Pour chaque type d'enchère, un fichier de test vous est fourni.
 
 Il y a également un certain nombre d'utilitaires dans le projet (`utils.py`, `testing_utils.py`), mais pour ce TP, vous n'avez pas besoin de les regarder.
 Je vous déconseille fortement de les modifier 🙃
