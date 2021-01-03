@@ -4,20 +4,20 @@ OOP and inheritance ... in Python!
 
 ## Instructions
 
-Votre but est d'implémenter des ventes aux enchères. Une vente aux enchères à l'aveule a déjà été implémentée pour vous dans le fichier `blind.py`.
-Vous pouvez exécuter chacun des fichiers directement, pour "jouer" aux enchères:
+Votre but est d'implémenter des ventes aux enchères. Une vente aux enchères à l'aveugle a déjà été implémentée pour vous dans le fichier `blind.py`.
+Vous pouvez exécuter chacun des fichiers directement, pour "jouer" aux enchères :
 
 ```
 $ python blind.py
 ```
 
-Des tests pour ces enchères on été implementés dans `test_blind.py`. Vous pouvez les exécuter avec VSCode, ou bien directement dans le terminal:
+Des tests pour ces enchères ont été implementés dans `test_blind.py`. Vous pouvez les exécuter avec VSCode, ou bien directement dans le terminal :
 
 ```
 $ python test_blind.py
 ```
 
-Votre but va être d'implémenter d'autres types d'enchères. Pour chaque type d'enchères, un fichier de test vous est fourni.
+Votre but va être d'implémenter d'autres types d'enchères. Pour chaque type d'enchère, un fichier de test vous est fourni.
 
 Il y a également un certain nombre d'utilitaires dans le projet (`utils.py`, `testing_utils.py`), mais pour ce TP, vous n'avez pas besoin de les regarder.
 Je vous déconseille fortement de les modifier 🙃
@@ -34,7 +34,7 @@ Je vous déconseille fortement de les modifier 🙃
   - Par exemple, quand on leur demande d'enchérir, ils tapent "10" ou "115", mais ils ne tapent pas "toto 1234 %&@# 💣💩🤮"
   - Par exemple, quand on leur demande de sur-enchérir sur une enchère de 30, ils tapent "45" ou une chaîne vide pour passer leur tour, mais pas "12"
   - Le but n'est pas de tester toutes les possibilités !
-- Les exemples sont écrits avec en gris le texte affiché par le programme, et en orange pour le texte saisi par l'utilisateur (sur Github, ca peut varier selon les éditeurs de code). Ignorez les `#` et les `!`, qui ne sont là que pour le formattage:
+- Les exemples sont écrits avec en gris le texte affiché par le programme, et en orange pour le texte saisi par l'utilisateur (sur Github, ca peut varier selon les éditeurs de code). Ignorez les `#` et les `!`, qui ne sont là que pour le formattage :
 
 ```diff
 # Le programme affiche ceci.
@@ -90,7 +90,7 @@ Voici les règles des enchères à l'aveugle, ou [Blind auction](https://en.wiki
 
 - Les enchères démarrent avec un prix minimum
 - Les enchérisseurs doivent sur-enchérir par rapport au prix minimum
-- Les enchérisseurs ne savent pas quel est la plus haute enchère (on estime qu'ils ne peuvent pas lire ce que les autres on saisi dans le terminal)
+- Les enchérisseurs ne savent pas quel est la plus haute enchère (on estime qu'ils ne peuvent pas lire ce que les autres ont saisi dans le terminal)
 - Il n'y a qu'un seul tour
 - Le gagnant est celui qui a proposé le prix le plus haut
 - Le prix final est le prix le plus haut proposé
@@ -129,7 +129,7 @@ Exemple:
 
 Vous pouvez également regarder `test_blind.py` pour avoir une idée de comment les tests sont écrits, si vous êtes curieux.
 
-🚀 Exécutez `test_blind.py`, de préférence avec VS Code. Si vous exécutez dans le terminal, vous devriez avoir ce genre de résultat:
+🚀 Exécutez `test_blind.py`, de préférence avec VS Code. Si vous exécutez dans le terminal, vous devriez avoir ce genre de résultat :
 
 ```
 $ python test_auctions.py
@@ -145,7 +145,7 @@ Les 3 points indiquent 3 tests qui fonctionnent, et le "OK" indique que tous les
 
 ### 3. English auction: les règles
 
-Vous allez maintenant implémenter des enchères anglaises, ou [English auction](https://en.wikipedia.org/wiki/English_auction). Voici les règles:
+Vous allez maintenant implémenter des enchères anglaises, ou [English auction](https://en.wikipedia.org/wiki/English_auction). Voici les règles :
 
 - Les enchères démarrent avec un prix minimum
 - Les enchérisseurs doivent sur-enchérir par rapport à la meilleure enchère en cours
